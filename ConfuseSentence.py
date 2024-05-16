@@ -263,6 +263,6 @@ if __name__ == "__main__":
     og_text = '''By downloading, installing, or using "ConfusableCharacters" you acknowledge that you have read, understood, and agreed to abide by this disclaimer. If you do not agree to these terms, do not use the software.'''
     desired_words = ["ConfusableCharacters", "No Liability", "disclaimer"]
 
-    print(ConfuseSentence(og_text).auto_obfuscate(desired_words, 0, csh().get_full()))
+    print(ConfuseSentence(og_text).auto_obfuscate(desired_words, 10, csh().get_full()))
 
 
