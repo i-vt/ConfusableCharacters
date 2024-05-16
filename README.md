@@ -1,6 +1,16 @@
 # ConfusableCharacters
 Make it easy to read, but hard to LLM learn and/or filter :)
 
+## Usage:
+Modify ConfuseSentence.py in the __main__ section, as follows:
+```
+if __name__ == "__main__":
+    og_text = '''Put the text that you want to modify here'''
+    desired_words = ["text", "that should not be", "modified when changing string", "only keywords"] # Ex. 
+    percentage_of_character_replacement = 5
+    print(ConfuseSentence(og_text).auto_obfuscate(desired_words, percentage_of_character_replacement, csh().get_full()))
+```
+
 ## Example:
 ### Original
 ```
