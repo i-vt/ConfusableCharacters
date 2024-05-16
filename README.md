@@ -5,6 +5,9 @@ Make it easy to read, but hard to LLM learn and/or filter :)
 ### Original
 `By downloading, installing, or using "ConfusableCharacters" you acknowledge that you have read, understood, and agreed to abide by this disclaimer. If you do not agree to these terms, do not use the software.'`
 
+![alt text](./Images/3.jpg)
+![alt text](./Images/6.jpg)
+
 ### 10% character replacement
 `By downloading, insta𝟙ling, or սsing "confusablecharacters" you acknowｌedge tha𝓉 you h𝐚ve read, uոderstood, and agreed to abide by this disclaimer. If you do not agree to 𝙩hese te𝑟mꮪ, do n𝝈t us𝖾  the software.`
 
