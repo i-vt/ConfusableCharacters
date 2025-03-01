@@ -2,6 +2,11 @@
 Make it easy to read, but hard to LLM learn and/or filter :)
 
 ## Usage:
+
+### WebUI
+
+
+### CLI
 Modify ConfuseSentence.py in the __main__ section, as follows:
 ```
 if __name__ == "__main__":
@@ -55,6 +60,27 @@ In 𝓬۵nclusion, AI's impact on modern society is profჿu𝖓d and 
 
 ![alt text](./Images/4.jpg)
 ![alt text](./Images/7.jpg)
+
+### 0% character replacement + space tampering
+```
+Artificial Intelligence (AI) has become a transformative force in modern society, influencing various sectors from healthcare to finance, education to entertainment, and beyond. This technology, characterized by its ability to learn, reason, and self-correct, has opened up unprecedented possibilities and reshaped the way we live and work.
+
+In  healthcare, AI is revolutionizing diagnostics and treatment planning. Machine learning algorithms analyze vast amounts of medical data to  identify patterns and predict outcomes, enabling earlier and more accurate diagnoses. AI-powered systems assist doctors in personalizing treatment plans based on a patient's unique genetic makeup and medical  history. Moreover, robotic surgery, supported by AI, allows for precision and minimally invasive procedures, reducing recovery times and improving patient outcomes.
+
+The finance industry also benefits significantly from AI. Algorithms analyze market trends and financial data in real  time, providing insights that drive investment strategies and risk management. AI-powered chatbots and virtual assistants enhance customer service by providing instant responses to inquiries and automating routine tasks. Fraud detection systems leverage AI to monitor transactions and identify suspicious activities, safeguarding both institutions and consumers.
+
+In education, AI is transforming how we learn and teach. Personalized learning  platforms adapt to the needs of individual students, offering customized content and pacing. AI tools assist teachers by automating administrative tasks, such as grading and attendance tracking, allowing  them to focus more on instruction and student engagement. Furthermore, AI-driven analytics provide insights  into student performance and learning gaps, enabling targeted interventions.
+
+Entertainment and media have seen a surge in  AI applications as well. Streaming services use AI to recommend content based on user preferences and viewing history, enhancing the user experience. AI-generated content, such as music, art, and even news articles, is becoming more sophisticated, pushing the boundaries of creativity and production.
+
+However, the integration of AI into society also brings challenges and ethical considerations. Concerns about job displacement due to automation are prevalent, as AI systems take over tasks traditionally performed by humans. Ensuring data privacy and security is crucial, given the vast amounts of personal information AI systems process. Bias in AI algorithms, stemming from biased  training data, can lead to unfair and discriminatory  outcomes. Addressing these issues requires a collaborative effort among policymakers, technologists, and society at large.
+
+Moreover, the development of AI raises philosophical and existential questions about the future of human-machine interactions and the potential for AI to surpass human intelligence. As we continue to advance AI technology,  it is essential to balance innovation with ethical considerations, ensuring that AI serves  humanity's best interests.
+
+In conclusion, AI's impact on modern society is profound and multifaceted. While it offers significant benefits and opportunities across various sectors, it also poses challenges that require careful consideration and management. As we navigate this rapidly evolving landscape, fostering a responsible and inclusive approach to AI development and deployment will be key to harnessing its full potential for the  betterment of society.'
+```
+![image](https://github.com/user-attachments/assets/0bea89ee-70d3-4323-8dbb-f7c168e129de)
+
 
 ## Disclaimer for "ConfusableCharacters":
 
