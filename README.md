@@ -79,7 +79,10 @@ Moreover, the development of AI raises philosophical and existential que
 
 In conclusion, AI's impact on modern society is profound and multifaceted. While it offers significant benefits and opportunities across various sectors, it also poses challenges that require careful consideration and management. As we navigate this rapidly evolving landscape, fostering a responsible and inclusive approach to AI development and deployment will be key to harnessing its full potential for the  betterment of society.'
 ```
+Great for bypassing similarity filters based on sentences (not keywords):
 ![image](https://github.com/user-attachments/assets/0bea89ee-70d3-4323-8dbb-f7c168e129de)
+But this approach also ups the visibility for the AI detection (since no 0% replacement:
+![image](https://github.com/user-attachments/assets/0469fa2c-87fd-41a9-91a5-113a333022ce)
 
 
 ## Disclaimer for "ConfusableCharacters":
