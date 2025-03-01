@@ -19,9 +19,9 @@ usage: cli.py [-h] [-k KEYWORDS] [-p PERCENT] [-c {basic,full}] text
 cli.py: error: the following arguments are required: text
 ```
 
-```
-python3 cli.py "Artificial Intelligence (AI) has become a transformative force in modern society, influencing various sectors from healthcare to finance, education to entertainment, and beyond. This technology, characterized by its ability to learn, reason, and self-correct, has opened up unprecedented possibilities and reshaped the way we live and work." -k "self-correct","reshaped" -c full -p 5
 
+Command used: `python3 cli.py "Artificial Intelligence (AI) has become a transformative force in modern society, influencing various sectors from healthcare to finance, education to entertainment, and beyond. This technology, characterized by its ability to learn, reason, and self-correct, has opened up unprecedented possibilities and reshaped the way we live and work." -k "self-correct","reshaped" -c full -p 5`
+```
 Original Text: Artificial Intelligence (AI) has become a transformative force in modern society, influencing various sectors from healthcare to finance, education to entertainment, and beyond. This technology, characterized by its ability to learn, reason, and self-correct, has opened up unprecedented possibilities and reshaped the way we live and work.
 Obfuscated Text: Artificial Intelligence (Al) has become a transformative force in  modern society, influencing various sectors from h𝖾althcare 𝘵o 𝒻inance, education  to enter𝓉ainment, and beyo𝐧d. Thӏs te𝚌hnology, characte𝐫ize𝖽 by its ability to learn, reason, and self-correct, has ⲟpened up unprecedented possibilities and reshaped the way 𝖜e live an𝕕 work.
 
