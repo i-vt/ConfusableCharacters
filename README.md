@@ -2,18 +2,29 @@
 Make it easy to read, but hard to LLM learn and/or filter :)
 
 ## Usage:
+Example:
+I want to use FULL list of characters, but only 5% of non-space characters to be replaced. I want words "self-correct" and "reshaped" to not be modified.
 
 ### WebUI
-
+![image](https://github.com/user-attachments/assets/6d905592-bd6a-454f-913b-6706969c0b07)
+Keep in mind, don't add spaces after delimiters, unless you want those spaces to be preserved:
+- Bad: `Dog treat ,,,shaman,,, wright`
+- Good: `Dog treat,,,shaman,,,wright`
 
 ### CLI
 Modify ConfuseSentence.py in the __main__ section, as follows:
 ```
-if __name__ == "__main__":
-    og_text = '''Put the text that you want to modify here'''
-    desired_words = ["text", "that should not be", "modified when changing string", "only keywords"] # Ex. 
-    percentage_of_character_replacement = 5
-    print(ConfuseSentence(og_text).auto_obfuscate(desired_words, percentage_of_character_replacement, csh().get_full()))
+python3 cli.py 
+usage: cli.py [-h] [-k KEYWORDS] [-p PERCENT] [-c {basic,full}] text
+cli.py: error: the following arguments are required: text
+```
+
+```
+python3 cli.py "Artificial Intelligence (AI) has become a transformative force in modern society, influencing various sectors from healthcare to finance, education to entertainment, and beyond. This technology, characterized by its ability to learn, reason, and self-correct, has opened up unprecedented possibilities and reshaped the way we live and work." -k "self-correct","reshaped" -c full -p 5
+
+Original Text: Artificial Intelligence (AI) has become a transformative force in modern society, influencing various sectors from healthcare to finance, education to entertainment, and beyond. This technology, characterized by its ability to learn, reason, and self-correct, has opened up unprecedented possibilities and reshaped the way we live and work.
+Obfuscated Text: Artificial Intelligence (Al) has become a transformative force in  modern society, influencing various sectors from h𝖾althcare 𝘵o 𝒻inance, education  to enter𝓉ainment, and beyo𝐧d. Thӏs te𝚌hnology, characte𝐫ize𝖽 by its ability to learn, reason, and self-correct, has ⲟpened up unprecedented possibilities and reshaped the way 𝖜e live an𝕕 work.
+
 ```
 
 ## Example:
