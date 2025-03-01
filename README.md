@@ -81,7 +81,7 @@ In conclusion, AI's impact on modern society is profound and multifaceted.
 ```
 Great for bypassing similarity filters based on sentences (not keywords):
 ![image](https://github.com/user-attachments/assets/0bea89ee-70d3-4323-8dbb-f7c168e129de)
-But this approach also ups the visibility for the AI detection (since no 0% replacement:
+But this approach also ups the visibility for the AI detection (since 0% replacement):
 ![image](https://github.com/user-attachments/assets/0469fa2c-87fd-41a9-91a5-113a333022ce)
 
 
