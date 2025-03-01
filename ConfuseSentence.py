@@ -1,8 +1,6 @@
 import random, string, json, re
 if __name__!="__main__":
-    from .CharacterSets.CharacterSetHelper import CharacterSetHelper as csh
-else:
-    from CharacterSets.CharacterSetHelper import CharacterSetHelper as csh
+from CharacterSets.CharacterSetHelper import CharacterSetHelper as csh
 
 def pick_random_letter() -> str:
     letters = string.ascii_letters
