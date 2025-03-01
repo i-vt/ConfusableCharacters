@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Obfuscator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        textarea {
+            width: 100%;
+            height: 150px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        input[type="text"], select, button {
+            padding: 10px;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .slider-container {
+            display: flex;
+            align-items: center;
+        }
+        input[type="range"] {
+            width: 100%;
+        }
+        .slider-value {
+            font-size: 16px;
+            margin-left: 10px;
+        }
+        .output-box {
+            margin-top: 30px;
+            border: 1px solid #ccc;
+            padding: 15px;
+            background-color: #f9f9f9;
+        }
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-size: 14px;
+            background-color: #eee;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Text Obfuscator</h1>
+        <form action="/obfuscate" method="POST">
+            <div>
+                <label for="text_input">Original Text:</label>
+                <textarea id="text_input" name="text_input" required>{{ original_text }}</textarea>
+            </div>
+            <div>
+                <label for="keywords">Keywords to Obfuscate (comma-separated, use '...,,,...'): </label>
+                <input type="text" id="keywords" name="keywords" value="{{ keywords }}" placeholder="e.g. ConfusableCharacters,,,No Liability,,,disclaimer">
+            </div>
+            <div class="slider-container">
+                <label for="percent_chance">Chance to Obfuscate (0-100%):</label>
+                <input type="range" id="percent_chance" name="percent_chance" min="0" max="100" value="{{ percent_chance }}">
+                <span id="percent_value" class="slider-value">{{ percent_chance }}</span>%
+            </div>
+            <div>
+                <label for="char_set">Choose Character Set:</label>
+                <select id="char_set" name="char_set">
+                    <option value="basic" {% if char_set == 'basic' %}selected{% endif %}>Basic Character Set</option>
+                    <option value="full" {% if char_set == 'full' %}selected{% endif %}>Full Character Set</option>
+                </select>
+            </div>
+            <button type="submit">Obfuscate Text</button>
+        </form>
+
+        {% if obfuscated_text %}
+        <div class="output-box">
+            <h2>Obfuscated Text:</h2>
+            <pre>{{ obfuscated_text }}</pre>
+        </div>
+        {% endif %}
+    </div>
+
+    <script>
+        // JavaScript to dynamically update the percentage value as the slider moves
+        const slider = document.getElementById("percent_chance");
+        const percentValue = document.getElementById("percent_value");
+
+        // Update the value of the span when the slider value changes
+        slider.addEventListener("input", function() {
+            percentValue.textContent = slider.value;
+        });
+    </script>
+
+</body>
+</html>
