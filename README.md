@@ -6,6 +6,7 @@ Example:
 I want to use FULL list of characters, but only 5% of non-space characters to be replaced. I want words "self-correct" and "reshaped" to not be modified.
 
 ### WebUI
+requires Flask, which can be installed via: `pip install flask`, if you don't wanna install, use the CLI version.
 ![image](https://github.com/user-attachments/assets/6d905592-bd6a-454f-913b-6706969c0b07)
 Keep in mind, don't add spaces after delimiters, unless you want those spaces to be preserved:
 - Bad: `Dog treat ,,,shaman,,, wright`
